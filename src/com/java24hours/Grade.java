@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Grade {
 
 	public static void main(String[] args) {
-		Scanner scanner=new	Scanner(System.in);
+		Scanner sc=new Scanner(System.in);
 		System.out.print("请输入成绩查询结果:");
-		int score=scanner.nextInt();
-		
+		int score=sc.nextInt();
+		sc.close();
 		switch (score/10) {
 		case 10:
 			System.out.println("满分？牛逼哦！");
